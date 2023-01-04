@@ -1,0 +1,255 @@
+html, 
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    
+
+    
+}
+
+
+
+.oneNav, .twoNav, nav{
+ display: flex;
+
+}
+
+nav{
+ 
+    justify-content: space-between;
+    background-color: #fafafa;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: cadetblue; 
+}
+
+.twoNav{
+    margin-right: 2em;
+}
+
+
+.fa-comment-dots {
+   margin: 0.5em 0.1em 0 2em;
+}
+
+.title{
+   margin: 0.3em 0.1em;
+}
+
+.home, .aboutMe{
+    text-transform: capitalize;
+    margin: 0.5em 0.5em;
+}
+
+
+.intro img{
+    width: 100vw;
+    position: absolute;
+    height: 65vh;
+
+}
+
+.introo img{
+    margin-top: 5vw;
+    width: 30vw;
+    height: 30vh;
+    border-radius: 10px;
+}
+
+.heading{
+    position: relative;
+    top: 15vh;
+    left: 3vw;
+    color: aliceblue;
+    margin: 0;
+    width: 60vw;
+    height: 1vh;
+}
+
+.caption{
+    margin-bottom: 0.4em;
+
+}
+
+.captionh3{
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.captionh4{
+    font-weight: 200;
+    width: 48vw;
+    line-height: 1.5em;
+    font-size: 1.3rem;
+    margin-top: 0.2em;
+}
+
+
+
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1em 1fr 1fr 1fr 1em;
+    grid-gap: 1em;
+    grid-template-rows:  1fr 1fr 1fr 2em auto;
+    grid-template-areas: "initia initia initia initia initia"
+                         ". first second third ."
+                         ". fourth fifth sixth ."
+                         ". more more more ."
+                         "footer footer footer footer footer";
+               
+}
+
+.captionh4o{
+    font-weight: 300;
+    
+}
+
+.intro1{grid-area: initia;
+    
+    justify-self: start;}
+.intro21{grid-area: first;}    
+.intro2{grid-area: second}
+.intro3{grid-area: third}
+.intro4{grid-area: fourth}
+.intro5{grid-area: fifth}
+.intro6{grid-area: sixth}
+.footer{
+    grid-area: footer;
+    align-self: center;
+    color: white;
+    text-align: center;
+    background-color: midnightblue;    
+   
+    padding: 1em 0;
+}
+
+.footerp {
+    margin-top: 0;
+
+}
+
+.footerh5{
+    margin-bottom: 0;
+}
+
+button{
+    grid-area: more;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 2em;
+    color: darkslategray;
+    background-color: white;
+    font-weight: 650;
+    padding: 0.5em;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+   
+}
+
+button:hover{
+    color:cadetblue;
+    text-decoration: none;
+    border-bottom: black;
+}
+
+@media (max-width: 800px){
+
+
+    .heading{
+    position: relative;
+    top: 15vw;
+    left: 3vw;
+    color: aliceblue;
+    margin: 0;
+    width: 70vw;
+}
+
+.intro img{
+    width: 100vw;
+    position: absolute;
+    height: 300px;   
+}
+
+.caption{
+    margin-bottom: 0.4em;
+
+}
+
+.captionh3{
+    font-size: 2em;
+    margin: 0;
+}
+
+.captionh4{
+    font-weight: 400;
+    width: 70vw;
+    line-height: 1.1em;
+    font-size: 0.8rem;
+    margin-top: 0.2em;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1em 1fr 1em;
+    grid-template-rows: auto;
+    grid-gap: 1em;
+    grid-template-areas: "initia initia initia"
+                         ". first ."
+                         ". second ."
+                         ". third ."
+                         ". fourth ."
+                         ". fifth ."
+                         ". sixth ."
+                         ". more ."
+                         "footer footer footer";
+               
+}
+
+.intro1{
+    margin-bottom: 250px;
+}
+
+.introo img{
+    width: 85vw;
+    height: 40vw;
+
+}
+
+.captionh4o{
+    margin: 0;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

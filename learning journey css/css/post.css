@@ -1,0 +1,229 @@
+html,body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    
+}
+
+/* Navbar */
+
+.oneNav, .twoNav, nav{
+    display: flex;
+   
+   }
+   
+   nav{
+       justify-content: space-between;
+       background-color: #fafafa;
+     
+   }
+   
+   nav a{
+       color: black;
+       text-decoration: none;
+       font-weight: 600;
+   }
+   
+   nav a:hover {
+       color: cadetblue; 
+   }
+   
+   .twoNav{
+       margin-right: 2em;
+   }
+   
+   
+   .fa-comment-dots {
+      margin: 0.5em 0.1em 0 0;
+   }
+
+   .oneNav{
+    margin-left: 2em;
+   }
+   
+   .title{
+      margin: 0.3em 0.1em;
+   }
+   
+   .home, .aboutMe{
+       text-transform: capitalize;
+       margin: 0.5em 0.5em;
+   }
+
+
+   /* Main */
+
+/* Profile */
+
+#pic{
+    width: 80vw;
+    grid-area: pic;
+    align-self: end;
+    justify-self: end;
+    margin: 2em 4em;
+}
+
+.greeting{
+    grid-area: gr;
+    align-self: center;
+    justify-content:center;
+    margin-bottom: 0;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.gdesciption{
+    grid-area: gd;
+    text-align: center;
+    align-self: start;
+    margin: 0.5em 0 0 0;
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 1.2em;
+
+}
+
+.mainP{
+    grid-area: p;
+    margin: auto 10em;
+    line-height: 1.5em;
+}
+
+.recent{
+    grid-area: r;
+    justify-self: center;
+}
+
+.intro21{grid-area: first;}    
+.intro2{grid-area: second}
+.intro3{grid-area: third}
+.footer{
+    grid-area: f;
+    align-self: center;
+    color: white;
+    text-align: center;
+    background-color: midnightblue;    
+   
+    padding: 1em 0;
+}
+
+.footerp {
+    margin-top: 0;
+
+}
+
+.footerh5{
+    margin-bottom: 0;
+}
+
+.post{
+    display: grid;
+    grid-template-columns: 4em 1fr 1fr 1fr 4em;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    grid-template-areas: ". gr gr gr ."
+                         ". gd gd gd ."
+                         ". pic pic pic ."
+                         ". p p p ."
+                         ". r r r ."
+                         ". first second third ."
+                         "f f f f f"   ;
+}
+
+
+
+.introo img{
+    margin: auto;
+    width: 28vw;
+    height: 30vh;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.introo{
+    justify-self: center;
+    align-self: center;
+}
+
+.captionh4o{
+    font-weight: 300;
+    width: 28vw;
+    
+}
+
+
+@media (max-width: 800px){
+
+
+
+.post {
+    display: grid;
+    grid-template-columns: 1em 1fr 1em;
+    grid-template-areas: ". pic ."
+                         ". gr ."
+                         ". gd ."
+                         ". p ."
+                         ". r ."
+                         ". first ."
+                         ". second ."
+                         ". third ."
+                         "f f f";
+               
+}
+
+#pic{
+    width: 80vw;
+    grid-area: pic;
+    margin: 1em 0;
+    justify-self: center;
+ 
+}
+
+.greeting{
+    grid-area: gr;
+    text-align: center;
+    margin-top: 0;
+    font-size: 1.7rem;
+}
+
+.gdesciption{
+    grid-area: gd;
+    align-self: start;
+    margin: 0.5em 0 0 0;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 1.5em;
+
+}
+
+.mainP{
+    grid-area: p;
+    margin: auto 0;
+    line-height: 1.5em;
+}
+
+.introo img{
+    width: 85vw;
+    height: 40vw;
+
+}
+
+.captionh4o{
+    font-weight: 300;
+    line-height: 1.2em;
+    width: 85vw;
+    
+}
+
+.recent{
+    grid-area: r;
+    justify-self: center;
+}
+
+
+}
+
